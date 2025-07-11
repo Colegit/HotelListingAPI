@@ -62,7 +62,6 @@ public class HotelController : ControllerBase
 
             return Ok(updatedHotel);
         }
-
     }
 
     // DELETE api/<HotelsController>/5
