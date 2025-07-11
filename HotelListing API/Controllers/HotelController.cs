@@ -12,12 +12,12 @@ public class HotelController : ControllerBase
 
     private static List<Hotel> hotels = new List<Hotel>()
     {
-        new Hotel { Id = 1, Address = "123 fake st", Name = "fairmount", Rating = 4.5 },
+        new Hotel { Id = 1, Address = "124 fake st", Name = "fairmount", Rating = 4.5 },
         new Hotel { Id = 2, Address = "453 george st", Name = "ramada", Rating = 3.5 }
     };
 
     // GET: api/<HotelsController>
-    [HttpGet]
+    [HttpGet] 
     public ActionResult<IEnumerable<Hotel>> Get()
     {
         return Ok(hotels);
