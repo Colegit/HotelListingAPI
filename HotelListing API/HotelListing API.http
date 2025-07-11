@@ -1,0 +1,42 @@
+@HotelListing_API_HostAddress = http://localhost:5084
+
+GET {{HotelListing_API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{HotelListing_API_HostAddress}}/api/hotels
+
+###
+
+
+POST {{HotelListing_API_HostAddress}}/api/hotels
+Content-Type: application/json
+{
+  "id": 4,
+  "name": "super 8",
+  "address": "4233 hixon st",
+  "rating": 5
+}
+
+###
+
+@id=5
+DELETE {{HotelListing_API_HostAddress}}/api/hotels/{{id}}
+
+###
+
+GET {{HotelListing_API_HostAddress}}/api/hotels/{{id}}
+
+###
+
+PUT {{HotelListing_API_HostAddress}}/api/hotels/{{id}}
+Content-Type: application/json
+
+{
+  "name": "big 8",
+  "address": "123 fake st",
+  "rating": 4.6
+}
+
+###
