@@ -1,4 +1,4 @@
-﻿using HotelListing_API.Data;
+﻿using HotelListing_API.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelListing_API.Controllers;
