@@ -1,4 +1,4 @@
-﻿namespace HotelListing_API.Data;
+﻿namespace HotelListing_API.Models;
 
 public class Country
 {
@@ -6,7 +6,7 @@ public class Country
 
     public required string Name { get; set; }
 
-    public string? ShortName {  get; set; }
+    public string? ShortName { get; set; }
 
     public IList<Hotel> Hotels { get; set; } = [];
 
