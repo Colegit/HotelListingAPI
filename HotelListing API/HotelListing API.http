@@ -5,12 +5,12 @@ Accept: application/json
 
 ###
 
-GET {{HotelListing_API_HostAddress}}/api/hotels
+GET {{HotelListing_API_HostAddress}}/api/hotel
 
 ###
 
 
-POST {{HotelListing_API_HostAddress}}/api/hotels
+POST {{HotelListing_API_HostAddress}}/api/hotel
 Content-Type: application/json
 {
   "id": 4,
@@ -22,15 +22,15 @@ Content-Type: application/json
 ###
 
 @id=5
-DELETE {{HotelListing_API_HostAddress}}/api/hotels/{{id}}
+DELETE {{HotelListing_API_HostAddress}}/api/hotel/{{id}}
 
 ###
 
-GET {{HotelListing_API_HostAddress}}/api/hotels/{{id}}
+GET {{HotelListing_API_HostAddress}}/api/hotel/{{id}}
 
 ###
 
-PUT {{HotelListing_API_HostAddress}}/api/hotels/{{id}}
+PUT {{HotelListing_API_HostAddress}}/api/hotel/{{id}}
 Content-Type: application/json
 
 {
