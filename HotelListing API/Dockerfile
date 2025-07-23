@@ -29,5 +29,3 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "HotelListing API.dll"]
 
-
-## for spinning up an sql server image: docker run --name sqlserver -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Abc123!pass" -p 1433:1433 -d mcr.microsoft.com/mssql/server
