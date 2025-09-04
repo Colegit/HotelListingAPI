@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HotelListing_API.Controllers;
 
+//test
 [Route("api/[controller]")]
 [ApiController]
 public class HotelController : ControllerBase
